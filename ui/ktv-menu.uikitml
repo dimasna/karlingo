@@ -1,0 +1,369 @@
+<style>
+  .panel-container {
+    align-items: stretch;
+    padding: 2.5;
+    width: 60;
+    min-width: 60;
+    max-width: 60;
+    display: flex;
+    flex-direction: column;
+    background-color: #09090b;
+    border-color: #27272a;
+    border-width: 0.15;
+    border-radius: 3;
+    gap: 2;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1;
+  }
+
+  .heading {
+    font-size: 4;
+    font-weight: medium;
+    color: #fafafa;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1;
+  }
+
+  .menu-btn {
+    width: 100%;
+    padding: 1.5;
+    background-color: #18181b;
+    color: #fafafa;
+    border-radius: 1.5;
+    border-width: 0.1;
+    border-color: #27272a;
+    font-size: 2.5;
+    font-weight: medium;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8;
+  }
+
+  .menu-btn-primary {
+    background-color: #fafafa;
+    color: #09090b;
+    border-color: #e4e4e7;
+  }
+
+  .menu-btn-success {
+    background-color: #166534;
+    color: #fafafa;
+    border-color: #22c55e;
+  }
+
+  .menu-btn-danger {
+    background-color: #7f1d1d;
+    color: #fafafa;
+    border-color: #ef4444;
+  }
+
+  .menu-btn-secondary {
+    background-color: #27272a;
+    color: #a1a1aa;
+    border-color: #3f3f46;
+  }
+
+  .search-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5;
+    width: 100%;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5;
+  }
+
+  .section-title {
+    font-size: 3;
+    font-weight: medium;
+    color: #fafafa;
+  }
+
+  .section-subtitle {
+    font-size: 1.8;
+    color: #71717a;
+  }
+
+  .search-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1;
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 1.5;
+    background-color: #18181b;
+    color: #fafafa;
+    border-radius: 1.5;
+    border-width: 0.1;
+    border-color: #27272a;
+    font-size: 2;
+  }
+
+  .search-btn {
+    width: 100%;
+    padding: 1.5;
+    padding-left: 2;
+    padding-right: 2;
+    background-color: #fafafa;
+    color: #09090b;
+    border-radius: 1.5;
+    border-width: 0;
+    font-size: 2;
+    font-weight: medium;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8;
+  }
+
+  .results-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1;
+  }
+
+  .results-label {
+    font-size: 1.8;
+    color: #71717a;
+  }
+
+  .results-count {
+    font-size: 1.6;
+    color: #a1a1aa;
+  }
+
+  .results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8;
+    max-height: 30;
+    overflow: scroll;
+  }
+
+  .video-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3;
+    padding: 1.2;
+    background-color: #18181b;
+    border-radius: 1.5;
+    border-width: 0.1;
+    border-color: #27272a;
+    cursor: pointer;
+  }
+
+  .video-title {
+    font-size: 2;
+    color: #fafafa;
+    font-weight: medium;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5;
+  }
+
+  .video-meta {
+    font-size: 1.6;
+    color: #71717a;
+  }
+
+  .now-playing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1;
+    padding: 1.2;
+    background-color: #14532d;
+    border-radius: 1.5;
+    border-width: 0.1;
+    border-color: #22c55e;
+    margin-top: 1;
+  }
+
+  .now-playing-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2;
+  }
+
+  .now-playing-label {
+    font-size: 1.4;
+    color: #22c55e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4;
+  }
+
+  .now-playing-title {
+    font-size: 1.8;
+    color: #fafafa;
+  }
+
+  .stop-btn {
+    padding: 0.8;
+    padding-left: 1.2;
+    padding-right: 1.2;
+    background-color: #dc2626;
+    color: #fafafa;
+    border-radius: 1;
+    border-width: 0;
+    font-size: 1.6;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5;
+  }
+
+  .back-btn {
+    width: 100%;
+    padding: 1.2;
+    margin-top: 1;
+    background-color: #27272a;
+    color: #a1a1aa;
+    border-radius: 1.5;
+    border-width: 0.1;
+    border-color: #3f3f46;
+    font-size: 2;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8;
+  }
+
+  .icon {
+    width: 4;
+    height: 4;
+    color: #fafafa;
+  }
+
+  .btn-icon {
+    width: 2.5;
+    height: 2.5;
+    color: inherit;
+  }
+
+  .btn-icon-dark {
+    width: 2.5;
+    height: 2.5;
+    color: #09090b;
+  }
+
+  .btn-icon-small {
+    width: 1.8;
+    height: 1.8;
+    color: inherit;
+  }
+
+  .inline-icon {
+    width: 2;
+    height: 2;
+    color: #fafafa;
+  }
+
+  .inline-icon-small {
+    width: 1.6;
+    height: 1.6;
+    color: #22c55e;
+  }
+
+  .section-title-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8;
+  }
+</style>
+<div class="panel-container">
+  <div class="header">
+    <svg class="icon" src="./icons/mic.svg" />
+    <span class="heading">KTV Menu</span>
+  </div>
+  
+  <div id="menu-container" class="menu-container">
+    <button id="video-btn" class="menu-btn menu-btn-primary"><svg class="btn-icon" src="./icons/music.svg" /> Pick a Song</button>
+    <button id="settings-btn" class="menu-btn"><svg class="btn-icon" src="./icons/settings.svg" /> Settings</button>
+    <button id="exit-btn" class="menu-btn menu-btn-secondary"><svg class="btn-icon" src="./icons/log-out.svg" /> Exit to Browser</button>
+  </div>
+  
+  <div id="search-panel" class="search-panel hidden">
+    <div class="section-header">
+      <div class="section-title-row">
+        <svg class="icon" src="./icons/search.svg" />
+        <span class="section-title">Search Songs</span>
+      </div>
+      <span class="section-subtitle">Find karaoke videos on YouTube</span>
+    </div>
+    
+    <div class="search-box">
+      <input id="search-input" class="search-input" type="text" placeholder="Song or artist name..." />
+      <button id="search-btn" class="search-btn"><svg class="btn-icon-dark" src="./icons/search.svg" /> Search</button>
+    </div>
+    
+    <div class="results-header">
+      <span id="results-label" class="results-label">Popular Songs</span>
+      <span id="results-count" class="results-count"></span>
+    </div>
+    
+    <div id="results-container" class="results-container">
+      <div id="video-1" class="video-item">
+        <span class="video-title"><svg class="inline-icon" src="./icons/music.svg" /> Never Gonna Give You Up - Karaoke</span>
+        <span class="video-meta">Karaoke Channel • 3:33</span>
+      </div>
+      <div id="video-2" class="video-item">
+        <span class="video-title"><svg class="inline-icon" src="./icons/music.svg" /> Bohemian Rhapsody - Sing Along</span>
+        <span class="video-meta">Queen Karaoke • 5:55</span>
+      </div>
+      <div id="video-3" class="video-item">
+        <span class="video-title"><svg class="inline-icon" src="./icons/music.svg" /> Nirvana - Smells Like Teen Spirit (Official Music Video)</span>
+        <span class="video-meta">Rock Karaoke • 4:38</span>
+      </div>
+      <div id="video-4" class="video-item">
+        <span class="video-title"><svg class="inline-icon" src="./icons/music.svg" /> Despacito - Karaoke Version</span>
+        <span class="video-meta">Latin Karaoke • 4:42</span>
+      </div>
+    </div>
+    
+    <div id="now-playing" class="now-playing hidden">
+      <div class="now-playing-info">
+        <span class="now-playing-label"><svg class="inline-icon-small" src="./icons/play.svg" /> Now Playing</span>
+        <span id="now-playing-title" class="now-playing-title">-</span>
+      </div>
+      <button id="stop-btn" class="stop-btn"><svg class="btn-icon-small" src="./icons/square.svg" /> Stop</button>
+    </div>
+    
+    <button id="back-btn" class="back-btn"><svg class="btn-icon" src="./icons/arrow-left.svg" /> Back to Menu</button>
+  </div>
+</div>

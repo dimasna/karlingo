@@ -1,0 +1,296 @@
+<style>
+  .panel-container {
+    align-items: stretch;
+    padding: 2.5;
+    width: 50;
+    min-width: 50;
+    max-width: 50;
+    display: flex;
+    flex-direction: column;
+    background-color: #09090b;
+    border-color: #27272a;
+    border-width: 0.15;
+    border-radius: 3;
+    gap: 1.5;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .heading-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8;
+  }
+
+  .heading {
+    font-size: 3;
+    font-weight: medium;
+    color: #fafafa;
+  }
+
+  .close-btn {
+    background-color: #27272a;
+    color: #fafafa;
+    fill: #fafafa;
+    border-radius: 0.8;
+    border-width: 0;
+    font-size: 2;
+    cursor: pointer;
+  }
+
+  .icon {
+    width: 3;
+    height: 3;
+    color: #fafafa;
+  }
+
+  .close-icon {
+    width: 3.5;
+    height: 3.5;
+    color: #ffffff;
+    fill: #ffffff;
+  }
+
+  .stats-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1;
+    justify-content: space-between;
+  }
+
+  .stat-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1;
+    background-color: #18181b;
+    border-radius: 1;
+    border-width: 0.1;
+    border-color: #27272a;
+  }
+
+  .stat-value {
+    font-size: 3;
+    font-weight: bold;
+    color: #00ffff;
+  }
+
+  .stat-label {
+    font-size: 1.4;
+    color: #71717a;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1;
+    padding: 2;
+    background-color: #18181b;
+    border-radius: 1.5;
+    border-width: 0.1;
+    border-color: #27272a;
+    min-height: 20;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-word {
+    font-size: 5;
+    font-weight: bold;
+    color: #00ffff;
+    text-align: center;
+  }
+
+  .card-translation {
+    font-size: 3;
+    color: #fafafa;
+    text-align: center;
+  }
+
+  .card-phonetic {
+    font-size: 2;
+    color: #a1a1aa;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .card-hint {
+    font-size: 1.8;
+    color: #71717a;
+    text-align: center;
+  }
+
+  .buttons-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1;
+  }
+
+  .btn {
+    flex: 1;
+    padding: 1.2;
+    border-radius: 1.5;
+    border-width: 0;
+    font-size: 2;
+    font-weight: medium;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .btn-show {
+    background-color: #fafafa;
+    color: #09090b;
+  }
+
+  .btn-again {
+    background-color: #7f1d1d;
+    color: #fafafa;
+  }
+
+  .btn-hard {
+    background-color: #78350f;
+    color: #fafafa;
+  }
+
+  .btn-good {
+    background-color: #166534;
+    color: #fafafa;
+  }
+
+  .btn-easy {
+    background-color: #1e40af;
+    color: #fafafa;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .progress-text {
+    font-size: 1.6;
+    color: #71717a;
+    text-align: center;
+  }
+
+  .complete-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5;
+    align-items: center;
+    padding: 3;
+  }
+
+  .complete-icon {
+    width: 8;
+    height: 8;
+    color: #22c55e;
+  }
+
+  .complete-text {
+    font-size: 3;
+    font-weight: medium;
+    color: #fafafa;
+    text-align: center;
+  }
+
+  .complete-stats {
+    font-size: 2;
+    color: #a1a1aa;
+    text-align: center;
+  }
+
+  .start-btn {
+    width: 100%;
+    padding: 1.5;
+    background-color: #fafafa;
+    color: #09090b;
+    border-radius: 1.5;
+    border-width: 0;
+    font-size: 2.5;
+    font-weight: medium;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8;
+  }
+
+  .btn-icon {
+    width: 2.5;
+    height: 2.5;
+    color: inherit;
+  }
+
+  .empty-text {
+    font-size: 2;
+    color: #71717a;
+    text-align: center;
+    padding: 3;
+  }
+</style>
+<div class="panel-container">
+  <div class="header">
+    <div class="heading-row">
+      <svg class="icon" src="./icons/lightbulb.svg" />
+      <span class="heading">Review Session</span>
+    </div>
+    <button id="close-btn" class="close-btn"><svg class="close-icon" src="./icons/x.svg" /></button>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-box">
+      <span id="stat-due" class="stat-value">0</span>
+      <span class="stat-label">Due</span>
+    </div>
+    <div class="stat-box">
+      <span id="stat-reviewed" class="stat-value">0</span>
+      <span class="stat-label">Reviewed</span>
+    </div>
+    <div class="stat-box">
+      <span id="stat-correct" class="stat-value">0</span>
+      <span class="stat-label">Correct</span>
+    </div>
+  </div>
+
+  <div id="start-container">
+    <button id="start-btn" class="start-btn">
+      <svg class="btn-icon" src="./icons/play.svg" />
+      Start Review
+    </button>
+    <span id="empty-text" class="empty-text hidden">No cards due for review!</span>
+  </div>
+
+  <div id="card-container" class="card-container hidden">
+    <span id="card-word" class="card-word">Word</span>
+    <span id="card-translation" class="card-translation hidden">Translation</span>
+    <span id="card-phonetic" class="card-phonetic hidden">Phonetic</span>
+    <span id="card-hint" class="card-hint">Tap to reveal answer</span>
+  </div>
+
+  <div id="show-container" class="hidden">
+    <button id="show-btn" class="btn btn-show">Show Answer</button>
+  </div>
+
+  <div id="rating-container" class="buttons-row hidden">
+    <button id="btn-again" class="btn btn-again">Again</button>
+    <button id="btn-hard" class="btn btn-hard">Hard</button>
+    <button id="btn-good" class="btn btn-good">Good</button>
+    <button id="btn-easy" class="btn btn-easy">Easy</button>
+  </div>
+
+  <span id="progress-text" class="progress-text hidden">Card 1 of 10</span>
+
+  <div id="complete-container" class="complete-container hidden">
+    <svg class="complete-icon" src="./icons/check.svg" />
+    <span class="complete-text">Session Complete!</span>
+    <span id="complete-stats" class="complete-stats">You reviewed 10 cards</span>
+  </div>
+</div>

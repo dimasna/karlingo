@@ -1,0 +1,211 @@
+<style>
+  .panel-container {
+    align-items: stretch;
+    padding: 2.5;
+    width: 50;
+    min-width: 50;
+    max-width: 50;
+    display: flex;
+    flex-direction: column;
+    background-color: #09090b;
+    border-color: #27272a;
+    border-width: 0.15;
+    border-radius: 3;
+    gap: 2;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .heading-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1;
+  }
+
+  .heading {
+    font-size: 4;
+    font-weight: medium;
+    color: #fafafa;
+  }
+
+  .close-btn {
+    padding: 0.8;
+    padding-left: 1.2;
+    padding-right: 1.2;
+    background-color: #27272a;
+    color: #a1a1aa;
+    border-radius: 1;
+    border-width: 0;
+    font-size: 2;
+    cursor: pointer;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 1;
+  }
+
+  .section-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8;
+  }
+
+  .section-title {
+    font-size: 2.5;
+    font-weight: medium;
+    color: #fafafa;
+  }
+
+  .section-subtitle {
+    font-size: 1.8;
+    color: #71717a;
+  }
+
+  .language-selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5;
+    background-color: #18181b;
+    border-radius: 1.5;
+    border-width: 0.1;
+    border-color: #27272a;
+    gap: 1;
+  }
+
+  .arrow-btn {
+    padding: 1;
+    padding-left: 1.5;
+    padding-right: 1.5;
+    background-color: #27272a;
+    color: #fafafa;
+    border-radius: 1;
+    border-width: 0;
+    font-size: 2.5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .language-display {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3;
+  }
+
+  .language-name {
+    font-size: 3;
+    font-weight: medium;
+    color: #fafafa;
+  }
+
+  .language-native {
+    font-size: 2;
+    color: #a1a1aa;
+  }
+
+  .back-btn {
+    width: 100%;
+    padding: 1.2;
+    margin-top: 1;
+    background-color: #27272a;
+    color: #a1a1aa;
+    border-radius: 1.5;
+    border-width: 0.1;
+    border-color: #3f3f46;
+    font-size: 2;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8;
+  }
+
+  .icon {
+    width: 4;
+    height: 4;
+    color: #fafafa;
+  }
+
+  .section-icon {
+    width: 3;
+    height: 3;
+    color: #fafafa;
+  }
+
+  .btn-icon {
+    width: 2.5;
+    height: 2.5;
+    color: inherit;
+  }
+
+  .arrow-icon {
+    width: 3;
+    height: 3;
+    color: #fafafa;
+  }
+
+  .close-icon {
+    width: 2;
+    height: 2;
+    color: #a1a1aa;
+  }
+</style>
+<div class="panel-container">
+  <div class="header">
+    <div class="heading-row">
+      <svg class="icon" src="./icons/settings.svg" />
+      <span class="heading">Settings</span>
+    </div>
+    <button id="close-btn" class="close-btn"><svg class="close-icon" src="./icons/x.svg" /></button>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <svg class="section-icon" src="./icons/globe.svg" />
+      <span class="section-title">Native Language</span>
+    </div>
+    <span class="section-subtitle">Your language for translations</span>
+    <div class="language-selector">
+      <button id="native-prev" class="arrow-btn"><svg class="arrow-icon" src="./icons/arrow-left.svg" /></button>
+      <div class="language-display">
+        <span id="native-name" class="language-name">English</span>
+        <span id="native-native" class="language-native">English</span>
+      </div>
+      <button id="native-next" class="arrow-btn"><svg class="arrow-icon" src="./icons/arrow-right.svg" /></button>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-header">
+      <svg class="section-icon" src="./icons/book-open.svg" />
+      <span class="section-title">Target Language</span>
+    </div>
+    <span class="section-subtitle">Language you want to learn</span>
+    <div class="language-selector">
+      <button id="target-prev" class="arrow-btn"><svg class="arrow-icon" src="./icons/arrow-left.svg" /></button>
+      <div class="language-display">
+        <span id="target-name" class="language-name">Japanese</span>
+        <span id="target-native" class="language-native">日本語</span>
+      </div>
+      <button id="target-next" class="arrow-btn"><svg class="arrow-icon" src="./icons/arrow-right.svg" /></button>
+    </div>
+  </div>
+  
+  <button id="back-btn" class="back-btn"><svg class="btn-icon" src="./icons/arrow-left.svg" /> Back to Menu</button>
+</div>

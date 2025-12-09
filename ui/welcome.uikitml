@@ -1,0 +1,93 @@
+<style>
+  .panel-container {
+    align-items: center;
+    padding: 3;
+    width: 50;
+    display: flex;
+    flex-direction: column;
+    background-color: #09090b;
+    border-color: #27272a;
+    border-width: 0.15;
+    border-radius: 3;
+  }
+
+  .heading {
+    font-size: 5;
+    font-weight: bold;
+    color: #00ffff;
+    text-align: center;
+    margin-bottom: 0.5;
+  }
+
+  .tagline {
+    font-size: 2.2;
+    color: #a1a1aa;
+    text-align: center;
+    margin-bottom: 2;
+  }
+
+  .features-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1;
+    margin-bottom: 2;
+  }
+
+  .feature-card {
+    padding: 1.5;
+    background-color: #18181b;
+    border-radius: 1.5;
+    border-color: #3f3f46;
+    border-width: 0.1;
+  }
+
+  .feature-title {
+    font-size: 2;
+    font-weight: medium;
+    color: #fafafa;
+    margin-bottom: 0.3;
+  }
+
+  .feature-desc {
+    font-size: 1.6;
+    color: #a1a1aa;
+    line-height: 1.4;
+  }
+  
+  #xr-button {
+    width: 100%;
+    padding: 2;
+    background-color: #00ffff;
+    color: #09090b;
+    border-radius: 1.5;
+    border-width: 0;
+    font-size: 2.8;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+  }
+</style>
+<div class="panel-container">
+  <span class="heading">KARLINGO</span>
+  <span class="tagline">Karaoke meets language learning in VR</span>
+  
+  <div class="features-container">
+    <div class="feature-card">
+      <span class="feature-title">Sing & Learn</span>
+      <span class="feature-desc">Practice languages through karaoke with real-time lyrics and translations</span>
+    </div>
+    
+    <div class="feature-card">
+      <span class="feature-title">Smart Vocabulary</span>
+      <span class="feature-desc">Build your deck with spaced-repetition learning</span>
+    </div>
+    
+    <div class="feature-card">
+      <span class="feature-title">AI Conversation</span>
+      <span class="feature-desc">Chat with the robot assistant for instant feedback</span>
+    </div>
+  </div>
+  
+  <button id="xr-button">Enter XR</button>
+</div>

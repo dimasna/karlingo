@@ -1,0 +1,173 @@
+<style>
+  .panel-container {
+    align-items: stretch;
+    padding: 2;
+    width: 40;
+    min-width: 40;
+    max-width: 40;
+    display: flex;
+    flex-direction: column;
+    background-color: #09090b;
+    border-color: #27272a;
+    border-width: 0.15;
+    border-radius: 3;
+    gap: 1.5;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .heading {
+    flex: 1;
+    font-size: 3;
+    font-weight: medium;
+    color: #fafafa;
+  }
+
+  .close-btn {
+    flex: '1px';
+    background-color: #27272a;
+    color: #fafafa;
+    fill: #fafafa;
+    border-radius: 0.8;
+    border-width: 0;
+    font-size: 2;
+    cursor: pointer;
+  }
+
+  .word-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5;
+    padding: 1.5;
+    background-color: #18181b;
+    border-radius: 1.5;
+    border-width: 0.1;
+    border-color: #27272a;
+  }
+
+  .word-label {
+    font-size: 1.6;
+    color: #71717a;
+  }
+
+  .word-text {
+    font-size: 4;
+    font-weight: bold;
+    color: #00ffff;
+  }
+
+  .translation-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5;
+    padding: 1.5;
+    background-color: #18181b;
+    border-radius: 1.5;
+    border-width: 0.1;
+    border-color: #27272a;
+  }
+
+  .translation-label {
+    font-size: 1.6;
+    color: #71717a;
+  }
+
+  .translation-text {
+    font-size: 3;
+    font-weight: medium;
+    color: #fafafa;
+  }
+
+  .phonetic-text {
+    font-size: 2;
+    color: #a1a1aa;
+    font-style: italic;
+  }
+
+  .heading-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8;
+  }
+
+  .icon {
+    width: 3;
+    height: 3;
+    color: #fafafa;
+  }
+
+  .close-icon {
+    width: 3.5;
+    height: 3.5;
+    color: #ffffff;
+    fill: #ffffff;
+  }
+
+  .add-deck-btn {
+    width: 100%;
+    padding: 1.2;
+    margin-top: 0.5;
+    background-color: #166534;
+    color: #fafafa;
+    border-radius: 1.5;
+    border-width: 0;
+    font-size: 2;
+    font-weight: medium;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6;
+  }
+
+  .add-deck-btn-disabled {
+    background-color: #27272a;
+    color: #71717a;
+  }
+
+  .btn-icon {
+    width: 2;
+    height: 2;
+    color: inherit;
+  }
+
+  .added-text {
+    font-size: 1.6;
+    color: #22c55e;
+    text-align: center;
+    margin-top: 0.5;
+  }
+</style>
+<div class="panel-container">
+  <div class="header">
+    <div class="heading-row">
+      <svg class="icon" src="./icons/book-open.svg" />
+      <span class="heading">Translation</span>
+    </div>
+    <button id="close-btn" class="close-btn"><svg class="close-icon" src="./icons/x.svg" /></button>
+  </div>
+  
+  <div class="word-section">
+    <span class="word-label">Word</span>
+    <span id="word-text" class="word-text">-</span>
+  </div>
+  
+  <div class="translation-section">
+    <span class="translation-label">Translation</span>
+    <span id="translation-text" class="translation-text">-</span>
+    <span id="phonetic-text" class="phonetic-text">Click a word in the lyrics to translate</span>
+  </div>
+
+  <button id="add-deck-btn" class="add-deck-btn">
+    <svg class="btn-icon" src="./icons/check.svg" />
+    Add to Deck
+  </button>
+  <span id="added-text" class="added-text"></span>
+</div>
