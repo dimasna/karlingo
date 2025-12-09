@@ -13,7 +13,8 @@ export default defineConfig({
     injectIWER({
       device: 'metaQuest3',
       activation: 'localhost',
-      verbose: true 
+      verbose: true ,
+      injectOnBuild: true
     }),
     
     compileUIKit({ sourceDir: 'ui', outputDir: 'public/ui', verbose: true }),
