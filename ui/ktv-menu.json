@@ -1,0 +1,1757 @@
+{
+  "element": {
+    "type": "container",
+    "sourceTag": "div",
+    "children": [
+      {
+        "type": "container",
+        "sourceTag": "div",
+        "children": [
+          {
+            "type": "inline-svg",
+            "sourceTag": "svg",
+            "properties": {
+              "class": "icon",
+              "src": "./icons/mic.svg"
+            },
+            "text": "<svg class=\"icon\" src=\"./icons/mic.svg\"></svg>",
+            "dataUid": "uid-3"
+          },
+          {
+            "sourceTag": "span",
+            "type": "custom",
+            "children": [
+              "KTV Menu"
+            ],
+            "properties": {
+              "class": "heading"
+            },
+            "dataUid": "uid-4"
+          }
+        ],
+        "properties": {
+          "class": "header"
+        },
+        "dataUid": "uid-2"
+      },
+      {
+        "type": "container",
+        "sourceTag": "div",
+        "children": [
+          {
+            "sourceTag": "button",
+            "type": "custom",
+            "children": [
+              {
+                "type": "inline-svg",
+                "sourceTag": "svg",
+                "properties": {
+                  "class": "btn-icon",
+                  "src": "./icons/music.svg"
+                },
+                "text": "<svg class=\"btn-icon\" src=\"./icons/music.svg\"></svg>",
+                "dataUid": "uid-7"
+              },
+              "Pick a Song"
+            ],
+            "properties": {
+              "id": "video-btn",
+              "class": "menu-btn menu-btn-primary"
+            },
+            "dataUid": "uid-6"
+          },
+          {
+            "sourceTag": "button",
+            "type": "custom",
+            "children": [
+              {
+                "type": "inline-svg",
+                "sourceTag": "svg",
+                "properties": {
+                  "class": "btn-icon",
+                  "src": "./icons/settings.svg"
+                },
+                "text": "<svg class=\"btn-icon\" src=\"./icons/settings.svg\"></svg>",
+                "dataUid": "uid-9"
+              },
+              "Settings"
+            ],
+            "properties": {
+              "id": "settings-btn",
+              "class": "menu-btn"
+            },
+            "dataUid": "uid-8"
+          },
+          {
+            "sourceTag": "button",
+            "type": "custom",
+            "children": [
+              {
+                "type": "inline-svg",
+                "sourceTag": "svg",
+                "properties": {
+                  "class": "btn-icon",
+                  "src": "./icons/log-out.svg"
+                },
+                "text": "<svg class=\"btn-icon\" src=\"./icons/log-out.svg\"></svg>",
+                "dataUid": "uid-11"
+              },
+              "Exit to Browser"
+            ],
+            "properties": {
+              "id": "exit-btn",
+              "class": "menu-btn menu-btn-secondary"
+            },
+            "dataUid": "uid-10"
+          }
+        ],
+        "properties": {
+          "id": "menu-container",
+          "class": "menu-container"
+        },
+        "dataUid": "uid-5"
+      },
+      {
+        "type": "container",
+        "sourceTag": "div",
+        "children": [
+          {
+            "type": "container",
+            "sourceTag": "div",
+            "children": [
+              {
+                "type": "container",
+                "sourceTag": "div",
+                "children": [
+                  {
+                    "type": "inline-svg",
+                    "sourceTag": "svg",
+                    "properties": {
+                      "class": "icon",
+                      "src": "./icons/search.svg"
+                    },
+                    "text": "<svg class=\"icon\" src=\"./icons/search.svg\"></svg>",
+                    "dataUid": "uid-15"
+                  },
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "Search Songs"
+                    ],
+                    "properties": {
+                      "class": "section-title"
+                    },
+                    "dataUid": "uid-16"
+                  }
+                ],
+                "properties": {
+                  "class": "section-title-row"
+                },
+                "dataUid": "uid-14"
+              },
+              {
+                "sourceTag": "span",
+                "type": "custom",
+                "children": [
+                  "Find karaoke videos on YouTube"
+                ],
+                "properties": {
+                  "class": "section-subtitle"
+                },
+                "dataUid": "uid-17"
+              }
+            ],
+            "properties": {
+              "class": "section-header"
+            },
+            "dataUid": "uid-13"
+          },
+          {
+            "type": "container",
+            "sourceTag": "div",
+            "children": [
+              {
+                "type": "input",
+                "sourceTag": "input",
+                "properties": {
+                  "id": "search-input",
+                  "class": "search-input",
+                  "type": "text",
+                  "placeholder": "Song or artist name..."
+                },
+                "dataUid": "uid-19"
+              },
+              {
+                "sourceTag": "button",
+                "type": "custom",
+                "children": [
+                  {
+                    "type": "inline-svg",
+                    "sourceTag": "svg",
+                    "properties": {
+                      "class": "btn-icon-dark",
+                      "src": "./icons/search.svg"
+                    },
+                    "text": "<svg class=\"btn-icon-dark\" src=\"./icons/search.svg\"></svg>",
+                    "dataUid": "uid-21"
+                  },
+                  "Search"
+                ],
+                "properties": {
+                  "id": "search-btn",
+                  "class": "search-btn"
+                },
+                "dataUid": "uid-20"
+              }
+            ],
+            "properties": {
+              "class": "search-box"
+            },
+            "dataUid": "uid-18"
+          },
+          {
+            "type": "container",
+            "sourceTag": "div",
+            "children": [
+              {
+                "sourceTag": "span",
+                "type": "custom",
+                "children": [
+                  "Popular Songs"
+                ],
+                "properties": {
+                  "id": "results-label",
+                  "class": "results-label"
+                },
+                "dataUid": "uid-23"
+              },
+              {
+                "sourceTag": "span",
+                "type": "custom",
+                "children": [],
+                "properties": {
+                  "id": "results-count",
+                  "class": "results-count"
+                },
+                "dataUid": "uid-24"
+              }
+            ],
+            "properties": {
+              "class": "results-header"
+            },
+            "dataUid": "uid-22"
+          },
+          {
+            "type": "container",
+            "sourceTag": "div",
+            "children": [
+              {
+                "type": "container",
+                "sourceTag": "div",
+                "children": [
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      {
+                        "type": "inline-svg",
+                        "sourceTag": "svg",
+                        "properties": {
+                          "class": "inline-icon",
+                          "src": "./icons/music.svg"
+                        },
+                        "text": "<svg class=\"inline-icon\" src=\"./icons/music.svg\"></svg>",
+                        "dataUid": "uid-28"
+                      },
+                      "Never Gonna Give You Up - Karaoke"
+                    ],
+                    "properties": {
+                      "class": "video-title"
+                    },
+                    "dataUid": "uid-27"
+                  },
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "Karaoke Channel • 3:33"
+                    ],
+                    "properties": {
+                      "class": "video-meta"
+                    },
+                    "dataUid": "uid-29"
+                  }
+                ],
+                "properties": {
+                  "id": "video-1",
+                  "class": "video-item"
+                },
+                "dataUid": "uid-26"
+              },
+              {
+                "type": "container",
+                "sourceTag": "div",
+                "children": [
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      {
+                        "type": "inline-svg",
+                        "sourceTag": "svg",
+                        "properties": {
+                          "class": "inline-icon",
+                          "src": "./icons/music.svg"
+                        },
+                        "text": "<svg class=\"inline-icon\" src=\"./icons/music.svg\"></svg>",
+                        "dataUid": "uid-32"
+                      },
+                      "Bohemian Rhapsody - Sing Along"
+                    ],
+                    "properties": {
+                      "class": "video-title"
+                    },
+                    "dataUid": "uid-31"
+                  },
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "Queen Karaoke • 5:55"
+                    ],
+                    "properties": {
+                      "class": "video-meta"
+                    },
+                    "dataUid": "uid-33"
+                  }
+                ],
+                "properties": {
+                  "id": "video-2",
+                  "class": "video-item"
+                },
+                "dataUid": "uid-30"
+              },
+              {
+                "type": "container",
+                "sourceTag": "div",
+                "children": [
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      {
+                        "type": "inline-svg",
+                        "sourceTag": "svg",
+                        "properties": {
+                          "class": "inline-icon",
+                          "src": "./icons/music.svg"
+                        },
+                        "text": "<svg class=\"inline-icon\" src=\"./icons/music.svg\"></svg>",
+                        "dataUid": "uid-36"
+                      },
+                      "Nirvana - Smells Like Teen Spirit (Official Music Video)"
+                    ],
+                    "properties": {
+                      "class": "video-title"
+                    },
+                    "dataUid": "uid-35"
+                  },
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "Rock Karaoke • 4:38"
+                    ],
+                    "properties": {
+                      "class": "video-meta"
+                    },
+                    "dataUid": "uid-37"
+                  }
+                ],
+                "properties": {
+                  "id": "video-3",
+                  "class": "video-item"
+                },
+                "dataUid": "uid-34"
+              },
+              {
+                "type": "container",
+                "sourceTag": "div",
+                "children": [
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      {
+                        "type": "inline-svg",
+                        "sourceTag": "svg",
+                        "properties": {
+                          "class": "inline-icon",
+                          "src": "./icons/music.svg"
+                        },
+                        "text": "<svg class=\"inline-icon\" src=\"./icons/music.svg\"></svg>",
+                        "dataUid": "uid-40"
+                      },
+                      "Despacito - Karaoke Version"
+                    ],
+                    "properties": {
+                      "class": "video-title"
+                    },
+                    "dataUid": "uid-39"
+                  },
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "Latin Karaoke • 4:42"
+                    ],
+                    "properties": {
+                      "class": "video-meta"
+                    },
+                    "dataUid": "uid-41"
+                  }
+                ],
+                "properties": {
+                  "id": "video-4",
+                  "class": "video-item"
+                },
+                "dataUid": "uid-38"
+              }
+            ],
+            "properties": {
+              "id": "results-container",
+              "class": "results-container"
+            },
+            "dataUid": "uid-25"
+          },
+          {
+            "type": "container",
+            "sourceTag": "div",
+            "children": [
+              {
+                "type": "container",
+                "sourceTag": "div",
+                "children": [
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      {
+                        "type": "inline-svg",
+                        "sourceTag": "svg",
+                        "properties": {
+                          "class": "inline-icon-small",
+                          "src": "./icons/play.svg"
+                        },
+                        "text": "<svg class=\"inline-icon-small\" src=\"./icons/play.svg\"></svg>",
+                        "dataUid": "uid-45"
+                      },
+                      "Now Playing"
+                    ],
+                    "properties": {
+                      "class": "now-playing-label"
+                    },
+                    "dataUid": "uid-44"
+                  },
+                  {
+                    "sourceTag": "span",
+                    "type": "custom",
+                    "children": [
+                      "-"
+                    ],
+                    "properties": {
+                      "id": "now-playing-title",
+                      "class": "now-playing-title"
+                    },
+                    "dataUid": "uid-46"
+                  }
+                ],
+                "properties": {
+                  "class": "now-playing-info"
+                },
+                "dataUid": "uid-43"
+              },
+              {
+                "sourceTag": "button",
+                "type": "custom",
+                "children": [
+                  {
+                    "type": "inline-svg",
+                    "sourceTag": "svg",
+                    "properties": {
+                      "class": "btn-icon-small",
+                      "src": "./icons/square.svg"
+                    },
+                    "text": "<svg class=\"btn-icon-small\" src=\"./icons/square.svg\"></svg>",
+                    "dataUid": "uid-48"
+                  },
+                  "Stop"
+                ],
+                "properties": {
+                  "id": "stop-btn",
+                  "class": "stop-btn"
+                },
+                "dataUid": "uid-47"
+              }
+            ],
+            "properties": {
+              "id": "now-playing",
+              "class": "now-playing hidden"
+            },
+            "dataUid": "uid-42"
+          },
+          {
+            "sourceTag": "button",
+            "type": "custom",
+            "children": [
+              {
+                "type": "inline-svg",
+                "sourceTag": "svg",
+                "properties": {
+                  "class": "btn-icon",
+                  "src": "./icons/arrow-left.svg"
+                },
+                "text": "<svg class=\"btn-icon\" src=\"./icons/arrow-left.svg\"></svg>",
+                "dataUid": "uid-50"
+              },
+              "Back to Menu"
+            ],
+            "properties": {
+              "id": "back-btn",
+              "class": "back-btn"
+            },
+            "dataUid": "uid-49"
+          }
+        ],
+        "properties": {
+          "id": "search-panel",
+          "class": "search-panel hidden"
+        },
+        "dataUid": "uid-12"
+      }
+    ],
+    "properties": {
+      "class": "panel-container"
+    },
+    "dataUid": "uid-1"
+  },
+  "classes": {
+    "panel-container": {
+      "content": {
+        "alignItems": "stretch",
+        "padding": "2.5",
+        "width": "60",
+        "minWidth": "60",
+        "maxWidth": "60",
+        "display": "flex",
+        "flexDirection": "column",
+        "backgroundColor": "#09090b",
+        "borderColor": "#27272a",
+        "borderWidth": "0.15",
+        "borderRadius": 3,
+        "gap": "2"
+      }
+    },
+    "header": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "1"
+      }
+    },
+    "heading": {
+      "content": {
+        "fontSize": "4",
+        "fontWeight": "medium",
+        "color": "#fafafa"
+      }
+    },
+    "menu-container": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "1"
+      }
+    },
+    "menu-btn": {
+      "content": {
+        "width": "100%",
+        "padding": "1.5",
+        "backgroundColor": "#18181b",
+        "color": "#fafafa",
+        "borderRadius": 1.5,
+        "borderWidth": "0.1",
+        "borderColor": "#27272a",
+        "fontSize": "2.5",
+        "fontWeight": "medium",
+        "textAlign": "center",
+        "cursor": "pointer",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "gap": "0.8"
+      }
+    },
+    "menu-btn-primary": {
+      "content": {
+        "backgroundColor": "#fafafa",
+        "color": "#09090b",
+        "borderColor": "#e4e4e7"
+      }
+    },
+    "menu-btn-success": {
+      "content": {
+        "backgroundColor": "#166534",
+        "color": "#fafafa",
+        "borderColor": "#22c55e"
+      }
+    },
+    "menu-btn-danger": {
+      "content": {
+        "backgroundColor": "#7f1d1d",
+        "color": "#fafafa",
+        "borderColor": "#ef4444"
+      }
+    },
+    "menu-btn-secondary": {
+      "content": {
+        "backgroundColor": "#27272a",
+        "color": "#a1a1aa",
+        "borderColor": "#3f3f46"
+      }
+    },
+    "search-panel": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "1.5",
+        "width": "100%"
+      }
+    },
+    "hidden": {
+      "content": {
+        "display": "none"
+      }
+    },
+    "section-header": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "0.5"
+      }
+    },
+    "section-title": {
+      "content": {
+        "fontSize": "3",
+        "fontWeight": "medium",
+        "color": "#fafafa"
+      }
+    },
+    "section-subtitle": {
+      "content": {
+        "fontSize": "1.8",
+        "color": "#71717a"
+      }
+    },
+    "search-box": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "1",
+        "width": "100%"
+      }
+    },
+    "search-input": {
+      "content": {
+        "width": "100%",
+        "padding": "1.5",
+        "backgroundColor": "#18181b",
+        "color": "#fafafa",
+        "borderRadius": 1.5,
+        "borderWidth": "0.1",
+        "borderColor": "#27272a",
+        "fontSize": "2"
+      }
+    },
+    "search-btn": {
+      "content": {
+        "width": "100%",
+        "padding": "1.5",
+        "paddingLeft": "2",
+        "paddingRight": "2",
+        "backgroundColor": "#fafafa",
+        "color": "#09090b",
+        "borderRadius": 1.5,
+        "borderWidth": "0",
+        "fontSize": "2",
+        "fontWeight": "medium",
+        "cursor": "pointer",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "gap": "0.8"
+      }
+    },
+    "results-header": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "marginTop": "1"
+      }
+    },
+    "results-label": {
+      "content": {
+        "fontSize": "1.8",
+        "color": "#71717a"
+      }
+    },
+    "results-count": {
+      "content": {
+        "fontSize": "1.6",
+        "color": "#a1a1aa"
+      }
+    },
+    "results-container": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "0.8",
+        "maxHeight": "30",
+        "overflow": "scroll"
+      }
+    },
+    "video-item": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "0.3",
+        "padding": "1.2",
+        "backgroundColor": "#18181b",
+        "borderRadius": 1.5,
+        "borderWidth": "0.1",
+        "borderColor": "#27272a",
+        "cursor": "pointer"
+      }
+    },
+    "video-title": {
+      "content": {
+        "fontSize": "2",
+        "color": "#fafafa",
+        "fontWeight": "medium",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "0.5"
+      }
+    },
+    "video-meta": {
+      "content": {
+        "fontSize": "1.6",
+        "color": "#71717a"
+      }
+    },
+    "now-playing": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "1",
+        "padding": "1.2",
+        "backgroundColor": "#14532d",
+        "borderRadius": 1.5,
+        "borderWidth": "0.1",
+        "borderColor": "#22c55e",
+        "marginTop": "1"
+      }
+    },
+    "now-playing-info": {
+      "content": {
+        "flex": "1",
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "0.2"
+      }
+    },
+    "now-playing-label": {
+      "content": {
+        "fontSize": "1.4",
+        "color": "#22c55e",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "0.4"
+      }
+    },
+    "now-playing-title": {
+      "content": {
+        "fontSize": "1.8",
+        "color": "#fafafa"
+      }
+    },
+    "stop-btn": {
+      "content": {
+        "padding": "0.8",
+        "paddingLeft": "1.2",
+        "paddingRight": "1.2",
+        "backgroundColor": "#dc2626",
+        "color": "#fafafa",
+        "borderRadius": 1,
+        "borderWidth": "0",
+        "fontSize": "1.6",
+        "cursor": "pointer",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "0.5"
+      }
+    },
+    "back-btn": {
+      "content": {
+        "width": "100%",
+        "padding": "1.2",
+        "marginTop": "1",
+        "backgroundColor": "#27272a",
+        "color": "#a1a1aa",
+        "borderRadius": 1.5,
+        "borderWidth": "0.1",
+        "borderColor": "#3f3f46",
+        "fontSize": "2",
+        "textAlign": "center",
+        "cursor": "pointer",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "gap": "0.8"
+      }
+    },
+    "icon": {
+      "content": {
+        "width": "4",
+        "height": "4",
+        "color": "#fafafa"
+      }
+    },
+    "btn-icon": {
+      "content": {
+        "width": "2.5",
+        "height": "2.5",
+        "color": "inherit"
+      }
+    },
+    "btn-icon-dark": {
+      "content": {
+        "width": "2.5",
+        "height": "2.5",
+        "color": "#09090b"
+      }
+    },
+    "btn-icon-small": {
+      "content": {
+        "width": "1.8",
+        "height": "1.8",
+        "color": "inherit"
+      }
+    },
+    "inline-icon": {
+      "content": {
+        "width": "2",
+        "height": "2",
+        "color": "#fafafa"
+      }
+    },
+    "inline-icon-small": {
+      "content": {
+        "width": "1.6",
+        "height": "1.6",
+        "color": "#22c55e"
+      }
+    },
+    "section-title-row": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "0.8"
+      }
+    }
+  },
+  "ranges": {
+    "panel-container": {
+      "start": {
+        "line": 1,
+        "column": 2
+      },
+      "end": {
+        "line": 1,
+        "column": 18
+      }
+    },
+    "header": {
+      "start": {
+        "line": 16,
+        "column": 2
+      },
+      "end": {
+        "line": 16,
+        "column": 9
+      }
+    },
+    "heading": {
+      "start": {
+        "line": 23,
+        "column": 2
+      },
+      "end": {
+        "line": 23,
+        "column": 10
+      }
+    },
+    "menu-container": {
+      "start": {
+        "line": 29,
+        "column": 2
+      },
+      "end": {
+        "line": 29,
+        "column": 17
+      }
+    },
+    "menu-btn": {
+      "start": {
+        "line": 35,
+        "column": 2
+      },
+      "end": {
+        "line": 35,
+        "column": 11
+      }
+    },
+    "menu-btn-primary": {
+      "start": {
+        "line": 54,
+        "column": 2
+      },
+      "end": {
+        "line": 54,
+        "column": 19
+      }
+    },
+    "menu-btn-success": {
+      "start": {
+        "line": 60,
+        "column": 2
+      },
+      "end": {
+        "line": 60,
+        "column": 19
+      }
+    },
+    "menu-btn-danger": {
+      "start": {
+        "line": 66,
+        "column": 2
+      },
+      "end": {
+        "line": 66,
+        "column": 18
+      }
+    },
+    "menu-btn-secondary": {
+      "start": {
+        "line": 72,
+        "column": 2
+      },
+      "end": {
+        "line": 72,
+        "column": 21
+      }
+    },
+    "search-panel": {
+      "start": {
+        "line": 78,
+        "column": 2
+      },
+      "end": {
+        "line": 78,
+        "column": 15
+      }
+    },
+    "hidden": {
+      "start": {
+        "line": 85,
+        "column": 2
+      },
+      "end": {
+        "line": 85,
+        "column": 9
+      }
+    },
+    "section-header": {
+      "start": {
+        "line": 89,
+        "column": 2
+      },
+      "end": {
+        "line": 89,
+        "column": 17
+      }
+    },
+    "section-title": {
+      "start": {
+        "line": 95,
+        "column": 2
+      },
+      "end": {
+        "line": 95,
+        "column": 16
+      }
+    },
+    "section-subtitle": {
+      "start": {
+        "line": 101,
+        "column": 2
+      },
+      "end": {
+        "line": 101,
+        "column": 19
+      }
+    },
+    "search-box": {
+      "start": {
+        "line": 106,
+        "column": 2
+      },
+      "end": {
+        "line": 106,
+        "column": 13
+      }
+    },
+    "search-input": {
+      "start": {
+        "line": 113,
+        "column": 2
+      },
+      "end": {
+        "line": 113,
+        "column": 15
+      }
+    },
+    "search-btn": {
+      "start": {
+        "line": 124,
+        "column": 2
+      },
+      "end": {
+        "line": 124,
+        "column": 13
+      }
+    },
+    "results-header": {
+      "start": {
+        "line": 143,
+        "column": 2
+      },
+      "end": {
+        "line": 143,
+        "column": 17
+      }
+    },
+    "results-label": {
+      "start": {
+        "line": 151,
+        "column": 2
+      },
+      "end": {
+        "line": 151,
+        "column": 16
+      }
+    },
+    "results-count": {
+      "start": {
+        "line": 156,
+        "column": 2
+      },
+      "end": {
+        "line": 156,
+        "column": 16
+      }
+    },
+    "results-container": {
+      "start": {
+        "line": 161,
+        "column": 2
+      },
+      "end": {
+        "line": 161,
+        "column": 20
+      }
+    },
+    "video-item": {
+      "start": {
+        "line": 169,
+        "column": 2
+      },
+      "end": {
+        "line": 169,
+        "column": 13
+      }
+    },
+    "video-title": {
+      "start": {
+        "line": 181,
+        "column": 2
+      },
+      "end": {
+        "line": 181,
+        "column": 14
+      }
+    },
+    "video-meta": {
+      "start": {
+        "line": 191,
+        "column": 2
+      },
+      "end": {
+        "line": 191,
+        "column": 13
+      }
+    },
+    "now-playing": {
+      "start": {
+        "line": 196,
+        "column": 2
+      },
+      "end": {
+        "line": 196,
+        "column": 14
+      }
+    },
+    "now-playing-info": {
+      "start": {
+        "line": 209,
+        "column": 2
+      },
+      "end": {
+        "line": 209,
+        "column": 19
+      }
+    },
+    "now-playing-label": {
+      "start": {
+        "line": 216,
+        "column": 2
+      },
+      "end": {
+        "line": 216,
+        "column": 20
+      }
+    },
+    "now-playing-title": {
+      "start": {
+        "line": 225,
+        "column": 2
+      },
+      "end": {
+        "line": 225,
+        "column": 20
+      }
+    },
+    "stop-btn": {
+      "start": {
+        "line": 230,
+        "column": 2
+      },
+      "end": {
+        "line": 230,
+        "column": 11
+      }
+    },
+    "back-btn": {
+      "start": {
+        "line": 246,
+        "column": 2
+      },
+      "end": {
+        "line": 246,
+        "column": 11
+      }
+    },
+    "icon": {
+      "start": {
+        "line": 265,
+        "column": 2
+      },
+      "end": {
+        "line": 265,
+        "column": 7
+      }
+    },
+    "btn-icon": {
+      "start": {
+        "line": 271,
+        "column": 2
+      },
+      "end": {
+        "line": 271,
+        "column": 11
+      }
+    },
+    "btn-icon-dark": {
+      "start": {
+        "line": 277,
+        "column": 2
+      },
+      "end": {
+        "line": 277,
+        "column": 16
+      }
+    },
+    "btn-icon-small": {
+      "start": {
+        "line": 283,
+        "column": 2
+      },
+      "end": {
+        "line": 283,
+        "column": 17
+      }
+    },
+    "inline-icon": {
+      "start": {
+        "line": 289,
+        "column": 2
+      },
+      "end": {
+        "line": 289,
+        "column": 14
+      }
+    },
+    "inline-icon-small": {
+      "start": {
+        "line": 295,
+        "column": 2
+      },
+      "end": {
+        "line": 295,
+        "column": 20
+      }
+    },
+    "section-title-row": {
+      "start": {
+        "line": 301,
+        "column": 2
+      },
+      "end": {
+        "line": 301,
+        "column": 20
+      }
+    },
+    "uid-1": {
+      "start": {
+        "line": 308,
+        "column": 0
+      },
+      "end": {
+        "line": 368,
+        "column": 6
+      }
+    },
+    "uid-2": {
+      "start": {
+        "line": 309,
+        "column": 2
+      },
+      "end": {
+        "line": 312,
+        "column": 8
+      }
+    },
+    "uid-3": {
+      "start": {
+        "line": 310,
+        "column": 4
+      },
+      "end": {
+        "line": 310,
+        "column": 46
+      }
+    },
+    "uid-4": {
+      "start": {
+        "line": 311,
+        "column": 4
+      },
+      "end": {
+        "line": 311,
+        "column": 41
+      }
+    },
+    "uid-5": {
+      "start": {
+        "line": 314,
+        "column": 2
+      },
+      "end": {
+        "line": 318,
+        "column": 8
+      }
+    },
+    "uid-6": {
+      "start": {
+        "line": 315,
+        "column": 4
+      },
+      "end": {
+        "line": 315,
+        "column": 130
+      }
+    },
+    "uid-7": {
+      "start": {
+        "line": 315,
+        "column": 61
+      },
+      "end": {
+        "line": 315,
+        "column": 109
+      }
+    },
+    "uid-8": {
+      "start": {
+        "line": 316,
+        "column": 4
+      },
+      "end": {
+        "line": 316,
+        "column": 116
+      }
+    },
+    "uid-9": {
+      "start": {
+        "line": 316,
+        "column": 47
+      },
+      "end": {
+        "line": 316,
+        "column": 98
+      }
+    },
+    "uid-10": {
+      "start": {
+        "line": 317,
+        "column": 4
+      },
+      "end": {
+        "line": 317,
+        "column": 137
+      }
+    },
+    "uid-11": {
+      "start": {
+        "line": 317,
+        "column": 62
+      },
+      "end": {
+        "line": 317,
+        "column": 112
+      }
+    },
+    "uid-12": {
+      "start": {
+        "line": 320,
+        "column": 2
+      },
+      "end": {
+        "line": 367,
+        "column": 8
+      }
+    },
+    "uid-13": {
+      "start": {
+        "line": 321,
+        "column": 4
+      },
+      "end": {
+        "line": 327,
+        "column": 10
+      }
+    },
+    "uid-14": {
+      "start": {
+        "line": 322,
+        "column": 6
+      },
+      "end": {
+        "line": 325,
+        "column": 12
+      }
+    },
+    "uid-15": {
+      "start": {
+        "line": 323,
+        "column": 8
+      },
+      "end": {
+        "line": 323,
+        "column": 53
+      }
+    },
+    "uid-16": {
+      "start": {
+        "line": 324,
+        "column": 8
+      },
+      "end": {
+        "line": 324,
+        "column": 55
+      }
+    },
+    "uid-17": {
+      "start": {
+        "line": 326,
+        "column": 6
+      },
+      "end": {
+        "line": 326,
+        "column": 74
+      }
+    },
+    "uid-18": {
+      "start": {
+        "line": 329,
+        "column": 4
+      },
+      "end": {
+        "line": 332,
+        "column": 10
+      }
+    },
+    "uid-19": {
+      "start": {
+        "line": 330,
+        "column": 6
+      },
+      "end": {
+        "line": 330,
+        "column": 103
+      }
+    },
+    "uid-20": {
+      "start": {
+        "line": 331,
+        "column": 6
+      },
+      "end": {
+        "line": 331,
+        "column": 119
+      }
+    },
+    "uid-21": {
+      "start": {
+        "line": 331,
+        "column": 49
+      },
+      "end": {
+        "line": 331,
+        "column": 103
+      }
+    },
+    "uid-22": {
+      "start": {
+        "line": 334,
+        "column": 4
+      },
+      "end": {
+        "line": 337,
+        "column": 10
+      }
+    },
+    "uid-23": {
+      "start": {
+        "line": 335,
+        "column": 6
+      },
+      "end": {
+        "line": 335,
+        "column": 73
+      }
+    },
+    "uid-24": {
+      "start": {
+        "line": 336,
+        "column": 6
+      },
+      "end": {
+        "line": 336,
+        "column": 60
+      }
+    },
+    "uid-25": {
+      "start": {
+        "line": 339,
+        "column": 4
+      },
+      "end": {
+        "line": 356,
+        "column": 10
+      }
+    },
+    "uid-26": {
+      "start": {
+        "line": 340,
+        "column": 6
+      },
+      "end": {
+        "line": 343,
+        "column": 12
+      }
+    },
+    "uid-27": {
+      "start": {
+        "line": 341,
+        "column": 8
+      },
+      "end": {
+        "line": 341,
+        "column": 126
+      }
+    },
+    "uid-28": {
+      "start": {
+        "line": 341,
+        "column": 34
+      },
+      "end": {
+        "line": 341,
+        "column": 85
+      }
+    },
+    "uid-29": {
+      "start": {
+        "line": 342,
+        "column": 8
+      },
+      "end": {
+        "line": 342,
+        "column": 62
+      }
+    },
+    "uid-30": {
+      "start": {
+        "line": 344,
+        "column": 6
+      },
+      "end": {
+        "line": 347,
+        "column": 12
+      }
+    },
+    "uid-31": {
+      "start": {
+        "line": 345,
+        "column": 8
+      },
+      "end": {
+        "line": 345,
+        "column": 123
+      }
+    },
+    "uid-32": {
+      "start": {
+        "line": 345,
+        "column": 34
+      },
+      "end": {
+        "line": 345,
+        "column": 85
+      }
+    },
+    "uid-33": {
+      "start": {
+        "line": 346,
+        "column": 8
+      },
+      "end": {
+        "line": 346,
+        "column": 60
+      }
+    },
+    "uid-34": {
+      "start": {
+        "line": 348,
+        "column": 6
+      },
+      "end": {
+        "line": 351,
+        "column": 12
+      }
+    },
+    "uid-35": {
+      "start": {
+        "line": 349,
+        "column": 8
+      },
+      "end": {
+        "line": 349,
+        "column": 149
+      }
+    },
+    "uid-36": {
+      "start": {
+        "line": 349,
+        "column": 34
+      },
+      "end": {
+        "line": 349,
+        "column": 85
+      }
+    },
+    "uid-37": {
+      "start": {
+        "line": 350,
+        "column": 8
+      },
+      "end": {
+        "line": 350,
+        "column": 59
+      }
+    },
+    "uid-38": {
+      "start": {
+        "line": 352,
+        "column": 6
+      },
+      "end": {
+        "line": 355,
+        "column": 12
+      }
+    },
+    "uid-39": {
+      "start": {
+        "line": 353,
+        "column": 8
+      },
+      "end": {
+        "line": 353,
+        "column": 120
+      }
+    },
+    "uid-40": {
+      "start": {
+        "line": 353,
+        "column": 34
+      },
+      "end": {
+        "line": 353,
+        "column": 85
+      }
+    },
+    "uid-41": {
+      "start": {
+        "line": 354,
+        "column": 8
+      },
+      "end": {
+        "line": 354,
+        "column": 60
+      }
+    },
+    "uid-42": {
+      "start": {
+        "line": 358,
+        "column": 4
+      },
+      "end": {
+        "line": 364,
+        "column": 10
+      }
+    },
+    "uid-43": {
+      "start": {
+        "line": 359,
+        "column": 6
+      },
+      "end": {
+        "line": 362,
+        "column": 12
+      }
+    },
+    "uid-44": {
+      "start": {
+        "line": 360,
+        "column": 8
+      },
+      "end": {
+        "line": 360,
+        "column": 115
+      }
+    },
+    "uid-45": {
+      "start": {
+        "line": 360,
+        "column": 40
+      },
+      "end": {
+        "line": 360,
+        "column": 96
+      }
+    },
+    "uid-46": {
+      "start": {
+        "line": 361,
+        "column": 8
+      },
+      "end": {
+        "line": 361,
+        "column": 71
+      }
+    },
+    "uid-47": {
+      "start": {
+        "line": 363,
+        "column": 6
+      },
+      "end": {
+        "line": 363,
+        "column": 114
+      }
+    },
+    "uid-48": {
+      "start": {
+        "line": 363,
+        "column": 45
+      },
+      "end": {
+        "line": 363,
+        "column": 100
+      }
+    },
+    "uid-49": {
+      "start": {
+        "line": 366,
+        "column": 4
+      },
+      "end": {
+        "line": 366,
+        "column": 118
+      }
+    },
+    "uid-50": {
+      "start": {
+        "line": 366,
+        "column": 43
+      },
+      "end": {
+        "line": 366,
+        "column": 96
+      }
+    }
+  }
+}

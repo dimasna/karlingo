@@ -1,0 +1,630 @@
+{
+  "element": {
+    "type": "container",
+    "sourceTag": "div",
+    "children": [
+      {
+        "type": "container",
+        "sourceTag": "div",
+        "children": [
+          {
+            "type": "container",
+            "sourceTag": "div",
+            "children": [
+              {
+                "sourceTag": "span",
+                "type": "custom",
+                "children": [
+                  "🤖"
+                ],
+                "properties": {
+                  "class": "robot-icon"
+                },
+                "dataUid": "uid-4"
+              },
+              {
+                "sourceTag": "span",
+                "type": "custom",
+                "children": [
+                  "Robot Bartender"
+                ],
+                "properties": {
+                  "class": "heading"
+                },
+                "dataUid": "uid-5"
+              }
+            ],
+            "properties": {
+              "class": "heading-row"
+            },
+            "dataUid": "uid-3"
+          },
+          {
+            "sourceTag": "button",
+            "type": "custom",
+            "children": [
+              {
+                "type": "inline-svg",
+                "sourceTag": "svg",
+                "properties": {
+                  "class": "close-icon",
+                  "src": "./icons/x.svg"
+                },
+                "text": "<svg class=\"close-icon\" src=\"./icons/x.svg\"></svg>",
+                "dataUid": "uid-7"
+              }
+            ],
+            "properties": {
+              "id": "close-btn",
+              "class": "close-btn"
+            },
+            "dataUid": "uid-6"
+          }
+        ],
+        "properties": {
+          "class": "header"
+        },
+        "dataUid": "uid-2"
+      },
+      {
+        "type": "container",
+        "sourceTag": "div",
+        "children": [
+          {
+            "sourceTag": "span",
+            "type": "custom",
+            "children": [
+              "Hi there! Welcome to the KTV room! 🎤 Tap the mic to talk to me!"
+            ],
+            "properties": {
+              "id": "message-text",
+              "class": "message-text"
+            },
+            "dataUid": "uid-9"
+          }
+        ],
+        "properties": {
+          "class": "message-section"
+        },
+        "dataUid": "uid-8"
+      },
+      {
+        "type": "container",
+        "sourceTag": "div",
+        "children": [
+          {
+            "sourceTag": "button",
+            "type": "custom",
+            "children": [
+              "🎤"
+            ],
+            "properties": {
+              "id": "mic-btn",
+              "class": "mic-btn"
+            },
+            "dataUid": "uid-11"
+          },
+          {
+            "sourceTag": "span",
+            "type": "custom",
+            "children": [
+              "Tap to speak"
+            ],
+            "properties": {
+              "class": "mic-hint"
+            },
+            "dataUid": "uid-12"
+          }
+        ],
+        "properties": {
+          "class": "mic-section"
+        },
+        "dataUid": "uid-10"
+      },
+      {
+        "sourceTag": "span",
+        "type": "custom",
+        "children": [],
+        "properties": {
+          "id": "status-text",
+          "class": "status-text"
+        },
+        "dataUid": "uid-13"
+      },
+      {
+        "type": "container",
+        "sourceTag": "div",
+        "children": [
+          {
+            "sourceTag": "button",
+            "type": "custom",
+            "children": [
+              "Close"
+            ],
+            "properties": {
+              "id": "close-chat-btn",
+              "class": "close-chat-btn"
+            },
+            "dataUid": "uid-15"
+          }
+        ],
+        "properties": {
+          "class": "button-row"
+        },
+        "dataUid": "uid-14"
+      }
+    ],
+    "properties": {
+      "class": "panel-container"
+    },
+    "dataUid": "uid-1"
+  },
+  "classes": {
+    "panel-container": {
+      "content": {
+        "alignItems": "stretch",
+        "padding": "2",
+        "width": "55",
+        "minWidth": "55",
+        "maxWidth": "55",
+        "display": "flex",
+        "flexDirection": "column",
+        "backgroundColor": "#09090b",
+        "borderColor": "#00ffff",
+        "borderWidth": "0.2",
+        "borderRadius": 3,
+        "gap": "1.5"
+      }
+    },
+    "header": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "space-between"
+      }
+    },
+    "heading": {
+      "content": {
+        "fontSize": "3",
+        "fontWeight": "medium",
+        "color": "#00ffff"
+      }
+    },
+    "close-btn": {
+      "content": {
+        "padding": "0.8",
+        "paddingLeft": "1.2",
+        "paddingRight": "1.2",
+        "backgroundColor": "#27272a",
+        "color": "#a1a1aa",
+        "borderRadius": 1,
+        "borderWidth": "0",
+        "fontSize": "2",
+        "cursor": "pointer"
+      }
+    },
+    "message-section": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "1",
+        "padding": "2",
+        "backgroundColor": "#18181b",
+        "borderRadius": 1.5,
+        "borderWidth": "0.1",
+        "borderColor": "#27272a",
+        "minHeight": "12"
+      }
+    },
+    "message-text": {
+      "content": {
+        "fontSize": "2.5",
+        "color": "#fafafa",
+        "lineHeight": "1.4"
+      }
+    },
+    "mic-section": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "1",
+        "alignItems": "center"
+      }
+    },
+    "mic-btn": {
+      "content": {
+        "padding": "2",
+        "paddingLeft": "3",
+        "paddingRight": "3",
+        "backgroundColor": "#00ffff",
+        "color": "#09090b",
+        "borderRadius": 50,
+        "borderWidth": "0",
+        "fontSize": "4",
+        "cursor": "pointer"
+      }
+    },
+    "mic-btn-active": {
+      "content": {
+        "padding": "2",
+        "paddingLeft": "3",
+        "paddingRight": "3",
+        "backgroundColor": "#ff4444",
+        "color": "#ffffff",
+        "borderRadius": 50,
+        "borderWidth": "0",
+        "fontSize": "4",
+        "cursor": "pointer"
+      }
+    },
+    "mic-hint": {
+      "content": {
+        "fontSize": "1.8",
+        "color": "#71717a",
+        "textAlign": "center"
+      }
+    },
+    "status-text": {
+      "content": {
+        "fontSize": "2",
+        "color": "#00ffff",
+        "textAlign": "center",
+        "minHeight": "3"
+      }
+    },
+    "button-row": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gap": "1",
+        "justifyContent": "center"
+      }
+    },
+    "close-chat-btn": {
+      "content": {
+        "padding": "1",
+        "paddingLeft": "3",
+        "paddingRight": "3",
+        "backgroundColor": "#27272a",
+        "color": "#fafafa",
+        "borderRadius": 1,
+        "borderWidth": "0",
+        "fontSize": "2",
+        "cursor": "pointer"
+      }
+    },
+    "heading-row": {
+      "content": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "0.8"
+      }
+    },
+    "robot-icon": {
+      "content": {
+        "fontSize": "3"
+      }
+    },
+    "close-icon": {
+      "content": {
+        "width": "2",
+        "height": "2",
+        "color": "#a1a1aa"
+      }
+    }
+  },
+  "ranges": {
+    "panel-container": {
+      "start": {
+        "line": 1,
+        "column": 2
+      },
+      "end": {
+        "line": 1,
+        "column": 18
+      }
+    },
+    "header": {
+      "start": {
+        "line": 16,
+        "column": 2
+      },
+      "end": {
+        "line": 16,
+        "column": 9
+      }
+    },
+    "heading": {
+      "start": {
+        "line": 23,
+        "column": 2
+      },
+      "end": {
+        "line": 23,
+        "column": 10
+      }
+    },
+    "close-btn": {
+      "start": {
+        "line": 29,
+        "column": 2
+      },
+      "end": {
+        "line": 29,
+        "column": 12
+      }
+    },
+    "message-section": {
+      "start": {
+        "line": 41,
+        "column": 2
+      },
+      "end": {
+        "line": 41,
+        "column": 18
+      }
+    },
+    "message-text": {
+      "start": {
+        "line": 53,
+        "column": 2
+      },
+      "end": {
+        "line": 53,
+        "column": 15
+      }
+    },
+    "mic-section": {
+      "start": {
+        "line": 59,
+        "column": 2
+      },
+      "end": {
+        "line": 59,
+        "column": 14
+      }
+    },
+    "mic-btn": {
+      "start": {
+        "line": 66,
+        "column": 2
+      },
+      "end": {
+        "line": 66,
+        "column": 10
+      }
+    },
+    "mic-btn-active": {
+      "start": {
+        "line": 78,
+        "column": 2
+      },
+      "end": {
+        "line": 78,
+        "column": 17
+      }
+    },
+    "mic-hint": {
+      "start": {
+        "line": 90,
+        "column": 2
+      },
+      "end": {
+        "line": 90,
+        "column": 11
+      }
+    },
+    "status-text": {
+      "start": {
+        "line": 96,
+        "column": 2
+      },
+      "end": {
+        "line": 96,
+        "column": 14
+      }
+    },
+    "button-row": {
+      "start": {
+        "line": 103,
+        "column": 2
+      },
+      "end": {
+        "line": 103,
+        "column": 13
+      }
+    },
+    "close-chat-btn": {
+      "start": {
+        "line": 110,
+        "column": 2
+      },
+      "end": {
+        "line": 110,
+        "column": 17
+      }
+    },
+    "heading-row": {
+      "start": {
+        "line": 122,
+        "column": 2
+      },
+      "end": {
+        "line": 122,
+        "column": 14
+      }
+    },
+    "robot-icon": {
+      "start": {
+        "line": 129,
+        "column": 2
+      },
+      "end": {
+        "line": 129,
+        "column": 13
+      }
+    },
+    "close-icon": {
+      "start": {
+        "line": 133,
+        "column": 2
+      },
+      "end": {
+        "line": 133,
+        "column": 13
+      }
+    },
+    "uid-1": {
+      "start": {
+        "line": 139,
+        "column": 0
+      },
+      "end": {
+        "line": 162,
+        "column": 6
+      }
+    },
+    "uid-2": {
+      "start": {
+        "line": 140,
+        "column": 2
+      },
+      "end": {
+        "line": 146,
+        "column": 8
+      }
+    },
+    "uid-3": {
+      "start": {
+        "line": 141,
+        "column": 4
+      },
+      "end": {
+        "line": 144,
+        "column": 10
+      }
+    },
+    "uid-4": {
+      "start": {
+        "line": 142,
+        "column": 6
+      },
+      "end": {
+        "line": 142,
+        "column": 40
+      }
+    },
+    "uid-5": {
+      "start": {
+        "line": 143,
+        "column": 6
+      },
+      "end": {
+        "line": 143,
+        "column": 50
+      }
+    },
+    "uid-6": {
+      "start": {
+        "line": 145,
+        "column": 4
+      },
+      "end": {
+        "line": 145,
+        "column": 100
+      }
+    },
+    "uid-7": {
+      "start": {
+        "line": 145,
+        "column": 45
+      },
+      "end": {
+        "line": 145,
+        "column": 91
+      }
+    },
+    "uid-8": {
+      "start": {
+        "line": 148,
+        "column": 2
+      },
+      "end": {
+        "line": 150,
+        "column": 8
+      }
+    },
+    "uid-9": {
+      "start": {
+        "line": 149,
+        "column": 4
+      },
+      "end": {
+        "line": 149,
+        "column": 120
+      }
+    },
+    "uid-10": {
+      "start": {
+        "line": 152,
+        "column": 2
+      },
+      "end": {
+        "line": 155,
+        "column": 8
+      }
+    },
+    "uid-11": {
+      "start": {
+        "line": 153,
+        "column": 4
+      },
+      "end": {
+        "line": 153,
+        "column": 52
+      }
+    },
+    "uid-12": {
+      "start": {
+        "line": 154,
+        "column": 4
+      },
+      "end": {
+        "line": 154,
+        "column": 46
+      }
+    },
+    "uid-13": {
+      "start": {
+        "line": 157,
+        "column": 2
+      },
+      "end": {
+        "line": 157,
+        "column": 52
+      }
+    },
+    "uid-14": {
+      "start": {
+        "line": 159,
+        "column": 2
+      },
+      "end": {
+        "line": 161,
+        "column": 8
+      }
+    },
+    "uid-15": {
+      "start": {
+        "line": 160,
+        "column": 4
+      },
+      "end": {
+        "line": 160,
+        "column": 69
+      }
+    }
+  }
+}
